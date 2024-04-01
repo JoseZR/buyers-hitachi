@@ -1,0 +1,93 @@
+---
+import { changeLanguage } from "i18next";
+import Layout from "../../layouts/Layout.astro";
+import Confettti from "../../components/Confetti";
+import { Redirect } from "../../components/Redirect";
+
+changeLanguage("en");
+---
+
+<Layout title='GRACIAS POR REGISTRARTE'>
+  <div
+    class='h-screen buyer-bloq-1 rounded-lg px-4 h-100 py-20 text-white flex flex-col items-center justify-center relative'
+    style='text-shadow: 4px 4px 12px black'
+  >
+    <Confettti client:visible />
+    <div
+      class='box lg:text-3xl text-2xl mb-4 text-center w-4/5 font-medium'
+      id='box1'
+    >
+      <span class='font-bold uppercase'
+        >¡FELICIDADES! <Redirect client:only /><br /><br />
+        ya eres parte de los COMPRADORES PROFESIONALES VIP de SOLAR + STORAGE y ECOMONDO
+        MÉXICO 2024
+      </span>
+    </div>
+    <p class='mt-2 mb-4 text-white text-2xl font-bold text-center'>
+      Del 17 al 19 abril de 2024 | Expo Guadalajara
+    </p>
+    <div class='grid sm:grid-cols-2 grid-cols-1 gap-10 py-6'>
+      <div class='flex items-center justify-center'>
+        <img
+          src='/img/logo_ssm.webp'
+          alt='solar storage mexico'
+          class='lg:h-[90px] h-[80px]'
+        />
+      </div>
+      <div class='flex items-center justify-center'>
+        <img
+          src='/img/logo_eco.webp'
+          alt='solar storage mexico'
+          class='lg:h-[90px] h-[80px]'
+        />
+      </div>
+    </div>
+    <div
+      class='text-center text-xl font-bold flex flex-col justify-center items-center'
+    >
+      <p class='text-xl'>IMPORTANTE</p>
+      <p class='text-center w-2/3'>
+        En un periodo máximo de una semana nos comunicaremos nuevamente para
+        describirle con detalle todas las actividades que tenemos para usted.
+      </p>
+    </div>
+    <a href='https://igeco.mx/'>
+      <button
+        class='mt-5 bg-blue-950 text-white px-4 py-2 rounded-md font-bold hover:bg-blue-100 hover:text-blue-950'
+      >
+        ENTÉRATE DE TODOS NUESTROS EVENTOS
+      </button>
+    </a>
+    <div class='flex flex-col justify-center items-center pt-5'>
+      <p class='text-xl font-semibold w-4/5 text-center'>
+        Si tiene alguna pregunta o necesita más información, no dude en ponerse
+        en contacto con Circe Prudente, Gerente de Comunicación de IGECo Mexico,
+        a través del siguiente correo electrónico: circe.prudente@igeco.mx.
+      </p>
+      <a href='mailto:circe.prudente@igeco.mx'>
+        <button
+          class='mt-5 bg-blue-950 text-white px-4 py-2 rounded-md font-bold hover:bg-blue-100 hover:text-blue-950'
+        >
+          ENVIAR MENSAJE
+        </button>
+      </a>
+    </div>
+  </div>
+</Layout>
+<style>
+  .box {
+    color: white;
+    animation: aniload 3s;
+  }
+
+  .buyer-bloq-1 {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.118),
+        rgba(22, 22, 22, 0.044)
+      ),
+      url('/img/background_02.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+</style>

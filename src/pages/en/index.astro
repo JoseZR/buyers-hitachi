@@ -1,6 +1,5 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Card from "../../components/Card.astro";
 import { ContactForm } from "../../components/ContactForm";
 import i18next, { t, changeLanguage } from "i18next";
 import { LanguageSelector } from "astro-i18next/components";
@@ -14,7 +13,6 @@ const base = lang === "es" ? "" : `/${lang}`;
 <Layout title="SOLAR-STORAGE">
 	<main>
 		<section class="h-screen bg-violet-300">
-			
 			  <div class="grid justify-items-end mx-14 py-5">
 				<div class='flex items-center md:order-2 button-language'>
 				{
@@ -44,10 +42,60 @@ const base = lang === "es" ? "" : `/${lang}`;
 		<section class="h-screen bg-green-300">
 
 		</section>
-		<section class="bg-blue-300">
-			<ContactForm />
+		<section class="bg-blue-300   md:pt-14 p-10">
+			<ContactForm client:visible />
 		</section>
 	</main>
+	<footer class="bg-gray-800">
+		<div class="p-5 container mx-auto px-4">
+		  <div
+			class="grid md:grid-cols-5 grid-cols-3 place-items-center items-center gap-8"
+		  >
+			<a href="" target="_blank">
+			  <img
+				src="/img/logo_ssm.webp"
+				alt="Expo de Sustentabilidad en Mexico"
+				width="120"
+			  />
+			</a>
+			<!-- <a href="" target="_blank">
+			  <img
+				src="/img/logo_eco.webp"
+				alt="Expo de Sustentabilidad en Mexico"
+				width="120"
+			  />
+			</a> -->
+			<a href="" target="_blank">
+			  <img
+				src="/img/igeco_bn.webp"
+				alt="Expo de Sustentabilidad en Mexico"
+				width="150"
+			  />
+			</a>
+			<a href="" target="_blank">
+			  <img
+				src="/img/deutsche_messe_bn.webp"
+				alt="Expo de Sustentabilidad en Mexico"
+				width="180"
+			  />
+			</a>
+			<a href="" target="_blank">
+			  <img
+				src="/img/RE+ logo wht.webp"
+				alt="Expo de Sustentabilidad en Mexico"
+				width="100"
+			  />
+			</a>
+			<a href="" target="_blank">
+			  <img
+				src="/img/SNEC logo wht.webp"
+				alt="Expo de Sustentabilidad en Mexico"
+				width="100"
+			  />
+			</a>
+		  </div>
+		</div>
+	  </footer>
 </Layout>
 
 <style>

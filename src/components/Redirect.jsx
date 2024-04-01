@@ -6,7 +6,7 @@ export function Redirect() {
 
   useEffect(() => {
     if (!zustandState) {
-      window.location.href = '/'
+      window.location.href = '/en'
     }
   }, [zustandState])
 

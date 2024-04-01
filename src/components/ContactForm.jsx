@@ -23,7 +23,8 @@ export function ContactForm() {
 
     // convertir los datos de un formulario HTML en un objeto JavaScript utilizando la API fetch()
     const formData = Object.fromEntries(new window.FormData(event.target))
-    console.log(formData) //Esto imprimirá en la consola el contenido de formData
+    console.log(formData)
+    
     const requestOptions = {
       method: 'POST',
       headers: {
@@ -34,7 +35,7 @@ export function ContactForm() {
     try {
       setSendStatus(true)
       const res = await fetch(
-        'https://buyers-vip.igeco.mx/backend/ecoFormInsert.php',
+        'https://buyers-vip.igeco.mx/backend_net/formNetworkingInsert.php',
         requestOptions
       )
       const data = await res.json()
@@ -64,7 +65,7 @@ export function ContactForm() {
     <>
       <form
         id='form-contact'
-        className='py-10 space-y-10 md:w-8/12 mx-auto'
+        className='py-5 space-y-10 md:w-8/12 mx-auto'
         onSubmit={handleSubmit}
       >
         <div>
@@ -177,7 +178,7 @@ export function ContactForm() {
             </div>
           </div>
         </div>
-        <div className='sm:col-span-2'>
+        {/* <div className='sm:col-span-2'>
           <label
             htmlFor='message'
             className='block mb-2 text-sm font-medium text-white'
@@ -191,7 +192,7 @@ export function ContactForm() {
             className='block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500'
             placeholder='Deja aquí tu comentario'
           ></textarea>
-        </div>
+        </div> */}
         {sendStatus ? (
           <span className='text-white flex'>
             <svg

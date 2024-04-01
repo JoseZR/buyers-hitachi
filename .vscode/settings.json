@@ -3,5 +3,6 @@
         "activityBar.background": "#062C5F",
         "titleBar.activeBackground": "#083E86",
         "titleBar.activeForeground": "#F7FAFE"
-    }
+    },
+    "editor.cursorSmoothCaretAnimation": "on"
 }
