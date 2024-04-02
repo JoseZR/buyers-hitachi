@@ -1,10 +1,9 @@
 {
     "site": {
-      "title": "Mon super site web !",
-      "description": "Voici la description de mon super site web !"
+      "title": "BUYERS PROGRAM",
+      "description": "Networking de Compradores profesionales SSM Y Hitachi"
     },
     "home": {
-      "title": "Bienvenue sur mon super site web !",
-      "subtitle": "Ceci est une chaine de charactères <0>plus compliquée</0> à traduire, il y a des <1>éléments html</1>, comme <2>un super lien</2> par exemple !"
+      "title": "BIENVENIDO AL EVENTO DE NETWORKING DEL PROGRAMA DE COMPRADORES"
     }
   }

@@ -1,10 +1,9 @@
 {
     "site": {
-      "title": "SOLAR-STORAGE",
-      "description": "Here is the description of my awesome website!"
+      "title": "BUYERS PROGRAM",
+      "description": "networking event of buyers program SSM Y Hitachi"
     },
     "home": {
-      "title": "SOLAR-STORAGE",
-      "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!"
+      "title": "WELCOME TO THE NETWORKING EVENT OF BUYERS PROGRAM"    
     }
   }
