@@ -35,7 +35,7 @@ export function ContactForm() {
     try {
       setSendStatus(true)
       const res = await fetch(
-        'https://buyers-vip.igeco.mx/backend_net/formNetworkingInsert.php',
+        'https://networking-hitachi.igeco.mx/backend/formNetworkingInsert.php',
         requestOptions
       )
       const data = await res.json()
