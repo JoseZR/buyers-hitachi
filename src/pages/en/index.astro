@@ -39,11 +39,11 @@ const base = lang === "es" ? "" : `/${lang}`;
 			  Tu navegador no soporta videos HTML5.
 			</video>
 		  </section>
-		<section class="bg-blue-300   md:pt-14 p-10">
+		<section class="bg-gray-900   md:pt-14 p-10">
 			<ContactForm client:visible />
 		</section>
 	</main>
-	<footer class="bg-gray-800">
+	<footer class="bg-gray-800 background-ssm">
 		<div class="p-5 container mx-auto px-4">
 		  <div
 			class="grid md:grid-cols-5 grid-cols-3 place-items-center items-center gap-8"
@@ -96,5 +96,10 @@ const base = lang === "es" ? "" : `/${lang}`;
 </Layout>
 
 <style>
-
+	 .background-ssm {
+    background-image: url("/img/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+  }
 </style>
