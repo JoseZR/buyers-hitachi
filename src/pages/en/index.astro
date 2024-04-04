@@ -12,7 +12,7 @@ const base = lang === "es" ? "" : `/${lang}`;
 
 <Layout title="Hitachi | Energy Solar Storage Days ">
 	<main>
-		<section class="h-screen bg-gray-950 relative overflow-hidden flex justify-center items-center">
+		<section class="h-screen bg-gray-950 relative overflow-hidden flex justify-center items-center background-ssm-01">
 			<div class="content z-20 text-white m-10">
 			  <div class=" flex items-center absolute top-0 right-0 m-4 button-language">
 				{i18next.language === 'en' ? (
@@ -31,14 +31,14 @@ const base = lang === "es" ? "" : `/${lang}`;
 						<img src='/img/logo_hitachi_blanco.webp' alt="" class="size-auto">
 					</div>
 				</div>
-				<p class="text-center md:text-5xl text-3xl  font-bold md:mt-10">{t("home.title")}</p>
+				<p class="text-center mt-10 md:text-5xl text-3xl font-bold md:mt-10">{t("home.title")}</p>
 				<p class="text-center mt-10 md:text-3xl text-3xl">{t("home.date")}</p>
 			  </div>
 			</div>
-			<video autoplay muted loop id="video" class="absolute inset-0 w-full h-full object-cover z-10">
+			<!-- <video autoplay muted loop id="video" class="absolute inset-0 w-full h-full object-cover z-10">
 			  <source src="/solarpowerBG.webm" type="video/webm">
 			  Tu navegador no soporta videos HTML5.
-			</video>
+			</video> -->
 		  </section>
 		<section class="bg-gray-900   md:pt-14 p-10">
 			<ContactForm client:visible />
@@ -97,6 +97,24 @@ const base = lang === "es" ? "" : `/${lang}`;
 </Layout>
 
 <style>
+
+	.background-ssm-01{
+		background-image: url("/img/background-hitachi.webp");
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	height: 100vh;
+	}
+
+	.background-ssm-01::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3); /* Aquí puedes ajustar la opacidad cambiando el valor alfa (último número) */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 	 .background-ssm {
     background-image: url("/img/background.webp");
     background-repeat: no-repeat;
