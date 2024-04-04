@@ -40,7 +40,11 @@ const base = lang === "es" ? "" : `/${lang}`;
 			  Tu navegador no soporta videos HTML5.
 			</video> -->
 		  </section>
-		<section class="bg-gray-900   md:pt-14 p-10">
+		  <section class="background-ssm md:h-screen flex flex-col justify-center items-center text-white px-4 py-8">
+				<p class="text-center font-semibold text-4xl leading-relaxed md:px-44" set:html={t("home.description")} /><br>
+				<p class="text-center md:pt-0 pt-8 font-semibold md:text-3xl text-3xl" set:html={t("home.date")} />
+		  </section>
+		<section class="bg-gray-900 md:pt-14 p-10">
 			<p class="text-white text-center font-bold md:text-4xl text-2xl pt-8 pb-14">{t("home.texto-invitación")}</p>
 			<ContactForm client:visible />
 		</section>
@@ -120,6 +124,5 @@ const base = lang === "es" ? "" : `/${lang}`;
     background-image: url("/img/background.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
   }
 </style>
