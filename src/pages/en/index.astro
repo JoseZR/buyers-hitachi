@@ -31,8 +31,6 @@ const base = lang === "es" ? "" : `/${lang}`;
 						<img src='/img/logo_hitachi_blanco.webp' alt="" class="md:size-auto w-60">
 					</div>
 				</div>
-				<p class="text-center mt-10 md:text-5xl text-4xl font-bold">{t("home.title")}</p>
-				<p class="text-center mt-10 md:text-3xl text-3xl" set:html={t("home.date")}></p>
 			  </div>
 			</div>
 			<!-- <video autoplay muted loop id="video" class="absolute inset-0 w-full h-full object-cover z-10">
@@ -41,11 +39,13 @@ const base = lang === "es" ? "" : `/${lang}`;
 			</video> -->
 		  </section>
 		  <section class="background-ssm md:h-screen flex flex-col justify-center items-center text-white px-4 py-8">
-				<p class="text-center font-semibold text-4xl leading-relaxed md:px-44" set:html={t("home.description")} /><br>
+				<p class="text-center font-semibold text-4xl" set:html={t("home.description-1")} /> <br>
+				<p class="text-center md:text-6xl text-4xl font-bold"> {t("home.title")} </p> <br>
+				<p class="text-center font-semibold text-4xl leading-relaxed md:px-44" set:html={t("home.description-2")} /> <br>
 				<p class="text-center md:pt-0 pt-8 font-semibold md:text-3xl text-3xl" set:html={t("home.date")} />
 		  </section>
 		<section class="bg-gray-900 md:pt-14 p-10">
-			<p class="text-white text-center font-bold md:text-4xl text-2xl pt-8 pb-14">{t("home.texto-invitación")}</p>
+			<p class="text-white text-center font-bold md:text-5xl text-2xl pt-8 pb-14">{t("home.texto-invitación")}</p>
 			<ContactForm client:visible />
 		</section>
 	</main>
