@@ -25,12 +25,13 @@ const base = lang === "es" ? "" : `/${lang}`;
 			  <div class="max-w-3xl mx-auto md:py-0 py-14">
 				<div class="grid md:grid-cols-2 md:gap-10 gap-6 pt-14">
 					<div class="flex items-center justify-center">
-						<img src="/img/logo_ssm.webp" alt="" class="md:size-auto w-60">
+						<img src="/img/logo_ssm.webp" alt="Solar Storage logo" class="md:size-auto w-60">
 					</div>
 					<div class="flex items-center justify-center">
-						<img src='/img/logo_hitachi_blanco.webp' alt="" class="md:size-auto w-60">
+						<img src='/img/logo_hitachi_blanco.webp' alt="Hitachi Inspire the Next" class=" md:h-[150px] w-auto	">
 					</div>
 				</div>
+				<p class="text-center pt-14 font-semibold md:text-4xl text-3xl" set:html={t("home.date")} />
 			  </div>
 			</div>
 			<!-- <video autoplay muted loop id="video" class="absolute inset-0 w-full h-full object-cover z-10">
@@ -42,7 +43,6 @@ const base = lang === "es" ? "" : `/${lang}`;
 				<p class="text-center font-semibold text-4xl" set:html={t("home.description-1")} /> <br>
 				<p class="text-center md:text-6xl text-4xl font-bold"> {t("home.title")} </p> <br>
 				<p class="text-center font-semibold text-4xl leading-relaxed md:px-44" set:html={t("home.description-2")} /> <br>
-				<p class="text-center md:pt-0 pt-8 font-semibold md:text-3xl text-3xl" set:html={t("home.date")} />
 		  </section>
 		<section class="bg-gray-900 md:pt-14 p-10">
 			<p class="text-white text-center font-bold md:text-5xl text-2xl pt-8 pb-14">{t("home.texto-invitación")}</p>
