@@ -9,22 +9,10 @@ changeLanguage("en");
 
 <Layout title='GRACIAS POR REGISTRARTE'>
   <div
-    class='h-screen buyer-bloq-1 rounded-lg px-4 h-100 py-20 text-white flex flex-col items-center justify-center relative'
+    class='md:h-screen buyer-bloq-1 rounded-lg px-4 h-100 py-20 text-white flex flex-col items-center justify-center relative'
     style='text-shadow: 4px 4px 12px black'
   >
     <Confettti client:visible />
-    <div
-      class='box lg:text-3xl text-2xl mb-4 text-center w-4/5 font-medium'
-      id='box1'
-    >
-      <span class='font-bold uppercase'
-        >¡FELICIDADES! <Redirect client:only /><br /><br />
-        ya eres parte de  <br> <br>Hitachi Energy Solar Storage Days   
-      </span>
-    </div>
-    <!-- <p class='mt-2 mb-4 text-white text-2xl font-bold text-center'>
-      Del 17 al 19 abril de 2024 | Expo Guadalajara
-    </p> -->
     <div class='grid sm:grid-cols-2 grid-cols-1 gap-10 py-6'>
       <div class='flex items-center justify-center'>
         <img
@@ -37,10 +25,23 @@ changeLanguage("en");
         <img
           src='/img/logo_hitachi_blanco.webp'
           alt='solar storage mexico'
-          class='md:h-[90px] h-[150px]'
+          class='md:h-[90px] h-[80px]'
         />
       </div>
     </div>
+    <div
+      class='box lg:text-3xl text-2xl mb-4 text-center w-4/5 font-medium pt-8'
+      id='box1'
+    >
+      <p class='font-bold uppercase'
+        >¡FELICIDADES! <Redirect client:only /><br /><br />
+        ya eres parte de <br><br> <span class="text-5xl pt-6"> Hitachi Energy Solar Storage Days</span>      
+      </p>
+      <p class="text-white text-center text-2xl pt-8 ">A la brevedad un miembro del equipo Hitachi y Solar Storage se pondrá en contacto contigo para brindarte más información </p>
+    </div>
+    <!-- <p class='mt-2 mb-4 text-white text-2xl font-bold text-center'>
+      Del 17 al 19 abril de 2024 | Expo Guadalajara
+    </p> -->
   </div>
 </Layout>
 <style>
@@ -58,6 +59,5 @@ changeLanguage("en");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
   }
 </style>
