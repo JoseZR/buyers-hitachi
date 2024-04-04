@@ -23,8 +23,8 @@ export function ContactForm() {
 
     // convertir los datos de un formulario HTML en un objeto JavaScript utilizando la API fetch()
     const formData = Object.fromEntries(new window.FormData(event.target))
-    console.log(formData)
-    
+    // console.log(formData)
+
     const requestOptions = {
       method: 'POST',
       headers: {
@@ -68,6 +68,24 @@ export function ContactForm() {
         className='py-5 space-y-10 md:w-8/12 mx-auto'
         onSubmit={handleSubmit}
       >
+        <div>
+          <label
+            htmlFor='anfitrion'
+            className='block mb-2 text-sm font-medium text-white'
+          >
+            Invitado por parte de :
+          </label>
+          <select
+            id='anfitrion'
+            name='anfitrion'
+            className='block w-full mt-1 p-2 text-gray-700 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500'
+            required
+          >
+            <option value=''>Selecciona una opción</option>
+            <option value='Solar + Storage Mexico'>Solar + Storage Mexico</option>
+            <option value='Hitachi Energy'>Hitachi Energy</option>
+          </select>
+        </div>
         <div>
           <label
             htmlFor='name'
