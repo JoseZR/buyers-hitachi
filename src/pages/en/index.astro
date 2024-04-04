@@ -10,7 +10,7 @@ const lang = i18next.language;
 const base = lang === "es" ? "" : `/${lang}`;
 ---
 
-<Layout title="SOLAR-STORAGE">
+<Layout title="Hitachi | Energy Solar Storage Days ">
 	<main>
 		<section class="h-screen bg-gray-950 relative overflow-hidden flex justify-center items-center">
 			<div class="content z-20 text-white m-10">
@@ -32,6 +32,7 @@ const base = lang === "es" ? "" : `/${lang}`;
 					</div>
 				</div>
 				<p class="text-center md:text-5xl text-3xl  font-bold md:mt-10">{t("home.title")}</p>
+				<p class="text-center mt-10 md:text-3xl text-3xl">{t("home.date")}</p>
 			  </div>
 			</div>
 			<video autoplay muted loop id="video" class="absolute inset-0 w-full h-full object-cover z-10">
