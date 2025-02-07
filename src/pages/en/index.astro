@@ -50,11 +50,16 @@ const base = lang === "es" ? "" : `/${lang}`;
                 width='200'
               />
             </div>
-            <div class='flex items-center justify-center'>
+            <div class='grid place-items-center'>
               <img
                 src='/img/logo_hitachi_blanco.webp'
                 alt='Hitachi Inspire the Next'
                 class='md:h-[150px] w-auto'
+              />
+              <img
+                src='/img/hitachilogo.webp'
+                alt='Hitachi Inspire the Next'
+                width='200'
               />
             </div>
           </div>
@@ -69,23 +74,46 @@ const base = lang === "es" ? "" : `/${lang}`;
 			  Tu navegador no soporta videos HTML5.
 			</video> -->
     </section>
-    <section
-      class='background-ssm md:h-screen flex flex-col justify-center items-center text-white px-4 py-8'
-    >
-      <p
-        class='text-center font-semibold text-3xl'
-        set:html={t('home.description-1')}
-      />
-      <br />
-      <p class='text-center md:text-6xl text-4xl font-bold'>
-        {t('home.title')}
-      </p>
-      <br />
-      <p
-        class='text-center font-semibold text-3xl leading-relaxed md:px-44'
-        set:html={t('home.description-2')}
-      />
-      <br />
+    <section class='background-ssm text-white px-4 py-10'>
+      <div class='container mx-auto px-4'>
+        <p
+          class='text-center font-semibold text-3xl'
+          set:html={t('home.description-1')}
+        />
+        <br />
+        <p class='text-center md:text-6xl text-4xl font-bold'>
+          {t('home.title')}
+        </p>
+        <br />
+        <p
+          class='font-semibold text-3xl leading-relaxed'
+          set:html={t('home.description-2')}
+        />
+        <p
+          class='mt-10 font-bold text-4xl leading-relaxed'
+          set:html={t('home.description-3')}
+        />
+        <ul class='list-disc text-3xl font-semibold md:ps-20 ps-10'>
+          <li>{t('home.description-4')}</li>
+          <li>{t('home.description-5')}</li>
+          <li>{t('home.description-6')}</li>
+        </ul>
+        <p class='my-5 text-3xl font-bold'>
+          {t('home.more')}
+        </p>
+        <a
+          href='https://www.hitachienergy.com/'
+          target='_blank'
+          class='text-white font-bold hover:text-emerald-500'
+        >
+          https://www.hitachienergy.com/
+        </a> | <a
+          href='https://www.linkedin.com/company/hitachienergy '
+          target='_blank'
+          class='text-white font-bold hover:text-emerald-500'
+          >https://www.linkedin.com/company/hitachienergy
+        </a>
+      </div>
     </section>
     <section class='bg-gray-900 md:pt-14 p-10'>
       <p
@@ -109,6 +137,11 @@ const base = lang === "es" ? "" : `/${lang}`;
             src='/img/logo_hitachi_blanco.webp'
             alt='Expo de Sustentabilidad en Mexico'
             width='170'
+          />
+          <img
+            src='/img/hitachilogo.webp'
+            alt='Hitachi Inspire the Next'
+            width='150'
           />
         </a>
         <a href='' target='_blank'>
@@ -146,7 +179,7 @@ const base = lang === "es" ? "" : `/${lang}`;
 
 <style>
   .background-ssm-01 {
-    background-image: url('/img/background-hitachi.webp');
+    background-image: url('/img/bg_hitachi.webp');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;

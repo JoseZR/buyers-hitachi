@@ -1,13 +1,18 @@
 {
     "site": {
-      "title": "Hitachi | Energy Solar Storage Days ",
+      "title": "Hitachi | Sustainable Energy Day  ",
       "description": "Networking de Compradores profesionales SSM Y Hitachi"
     },
     "home": {
-      "title": "Hitachi Energy Solar Storage Days ",
+      "title": "Sustainable Energy Day ",
       "date": "jueves 6 de abril 11:00 am | SALON MODA I <br/>  Expo Guadalajara, Jalisco",
-      "description-1":"RE+ Mexico y Hitachi Energy te invitan a participar en",
-      "description-2":"un desayuno de networking donde podrás conocer las últimas tecnologías de energía para una integración más suave, confiable y flexible a fuentes renovables, con soluciones de almacenamiento de energía, calidad de energía, digitalización, entre otras, que ayudarán a tu negocio a cumplir con sus objetivos de desarrollo sostenible",
+      "description-1":"RE+ Mexico y Hitachi Energy te invitan al evento exclusivo",
+      "description-2":"Acompáñanos en un desayuno de networking donde podrás descubrir las últimas tecnologías para una energía renovable segura, confiable y flexible que se adapta a las demandas energéticas en constante cambio. Conecta con líderes de la industria para conocer las soluciones y servicios que ayudarán a tu negocio a cumplir sus objetivos de sostenibilidad.",
+      "description-3": "¿Qué puedes esperar? ",
+      "description-4": "Aprende de nuestros expertos sobre la red eléctrica del mañana: será flexible y escalable con fuentes de energía distribuidas, microrredes, almacenamiento de baterías y más.",
+      "description-5": "Desbloquea el valor comercial real con soluciones de digitalización que te permiten planificar, tomar decisiones mejor informadas y crear más valor y retorno de inversión.",
+      "description-6": "Descubre los beneficios de la transición hacia energía renovable con impacto ambiental reducido, y mayor eficiencia y confiabilidad.",
+      "more": "Conoce más sobre Hitachi Energy:",
       "texto-invitación" : " ¡Regístrate ahora y no pierdas tu lugar! "
   }
 }
