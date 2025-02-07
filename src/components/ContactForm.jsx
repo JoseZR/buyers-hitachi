@@ -82,7 +82,7 @@ export function ContactForm() {
             required
           >
             <option value=''>Selecciona una opción</option>
-            <option value='Solar + Storage Mexico'>Solar + Storage Mexico</option>
+            <option value='Solar + Storage Mexico'>RE+ Mexico</option>
             <option value='Hitachi Energy'>Hitachi Energy</option>
           </select>
         </div>
