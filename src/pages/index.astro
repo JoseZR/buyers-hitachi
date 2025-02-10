@@ -44,7 +44,7 @@ const base = lang === "es" ? "" : `/${lang}`;
         <div
           class='max-w-3xl mx-auto bg-white/30 backdrop-blur-sm rounded-2xl p-5'
         >
-          <div class='grid md:grid-cols-2 md:gap-10 gap-6 pt-14'>
+          <div class='grid md:grid-cols-2 md:gap-10 gap-2 lg:gap-6 lg:pt-14'>
             <div class='flex items-center justify-center'>
               <img
                 src='/img/replusR.webp'
@@ -54,14 +54,14 @@ const base = lang === "es" ? "" : `/${lang}`;
             </div>
             <div class='grid place-items-center'>
               <img
-                src='/img/hitachi_logo.webp'
+                src='/img/hitachi_logoOriginal.webp'
                 alt='Hitachi Inspire the Next'
-                class='md:h-[150px] w-auto'
+                width='250'
               />
             </div>
           </div>
           <p
-            class='text-center pt-14 font-semibold md:text-3xl text-2xl'
+            class='text-center lg:pt-14 font-semibold md:text-3xl text-2xl'
             set:html={t('home.date')}
           />
         </div>
@@ -83,19 +83,19 @@ const base = lang === "es" ? "" : `/${lang}`;
         </p>
         <br />
         <p
-          class='font-semibold text-2xl leading-relaxed'
+          class='font-semibold text-lg lg:text-2xl leading-relaxed'
           set:html={t('home.description-2')}
         />
         <p
-          class='mt-10 font-bold text-2xl leading-relaxed'
+          class='mt-10 font-bold text-lg lg:text-2xl leading-relaxed'
           set:html={t('home.description-3')}
         />
-        <ul class='list-disc text-2xl font-semibold md:ps-20 ps-10'>
+        <ul class='list-disc text-lg lg:text-2xl font-semibold md:ps-20 ps-10'>
           <li>{t('home.description-4')}</li>
           <li>{t('home.description-5')}</li>
           <li>{t('home.description-6')}</li>
         </ul>
-        <p class='my-5 text-2xl font-bold'>
+        <p class='my-5 text-lg lg:text-2xl font-bold'>
           {t('home.more')}
         </p>
         <div class='flex items-center gap-5'>
@@ -166,7 +166,7 @@ const base = lang === "es" ? "" : `/${lang}`;
         </a>
         <a href='https://www.hitachienergy.com/latam/es' target='_blank'>
           <img
-            src='/img/hitachi_logo.webp'
+            src='/img/hitachi_logoOriginal.webp'
             alt='Hitachi Inspire the Next'
             width='150'
           />
@@ -227,9 +227,7 @@ const base = lang === "es" ? "" : `/${lang}`;
     }
 
     .background-ssm {
-      background-image: url('/img/background.webp');
-      background-repeat: no-repeat;
-      background-size: cover;
+      background-image: linear-gradient(90deg, #bc0100, #d86a03);
     }
   </style>
 </Layout>
